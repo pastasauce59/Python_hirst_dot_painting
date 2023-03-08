@@ -16,9 +16,8 @@ import turtle as t
 painter = t.Turtle()
 t.colormode(255)
 
-painter.penup()
-
 def hirst_paint():
+    painter.penup()
     painter.speed('fastest')
     yaxis = -250
     while yaxis <= 200:
@@ -34,10 +33,6 @@ def hirst_paint():
     painter.hideturtle()   
 
 hirst_paint()
-
-
-
-
 
 
 screen = t.Screen()
