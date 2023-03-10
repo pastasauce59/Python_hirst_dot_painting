@@ -18,19 +18,17 @@ t.colormode(255)
 
 def hirst_paint():
     painter.penup()
+    painter.hideturtle()
     painter.speed('fastest')
     yaxis = -250
     while yaxis <= 200:
         painter.setx(-250)
         painter.sety(yaxis)
         for paints in range(10):
-            painter.color(random.choice(color_list))
-            painter.dot(20)
+            painter.dot(20, random.choice(color_list))
             painter.forward(50)
         
-        yaxis += 50
-
-    painter.hideturtle()   
+        yaxis += 50  
 
 hirst_paint()
 
